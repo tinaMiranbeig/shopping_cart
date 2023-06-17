@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="flexContant">
+            <div class="boxLeft">
+                <h3 style="padding: 20px; color: white;">number of item</h3>
+                <div id="card-menu">
+                    <div class="row">
+                    <p class="pBoxLeft">total cost : $
+                        <span class="text-warning" id="count">0</span>
+                    </p>
+                    
+                    </div>
+                    <!-- <div id="%id%" class ='container ul-div' data-id="1">
+                        <ul data-price="%price%" data-count="%count%" style="display:inline">
+                            <li class="list-group-item list-group-item-secondary" style="display:inline">name : %title% </li>
+                            <li class="list-group-item list-group-item-secondary" style="display:inline">price : %price% </li>
+                            <li class="list-group-item list-group-item-secondary" style="display:inline"> 
+                             <span  class="count_numbere">1</span>
+                             </i>
+                    
+                        </ul>
+                        <button class="btn btn-danger" id="delItem" onclick="del(this)"><i class="fa-solid fa-xmark-large"></i></button>
+                    </div>     -->
+                    <!-- <div id="%id%" class ='container ul-div' data-id="2">
+                        <ul data-price="%price%" data-count="%count%" style="display:inline">
+                            <li class="list-group-item list-group-item-secondary" style="display:inline">name : %title% </li>
+                            <li class="list-group-item list-group-item-secondary" style="display:inline">price : %price% </li>
+                            <li class="list-group-item list-group-item-secondary" style="display:inline"> 
+                             <span  class="count_numbere">1</span>
+                             </i>
+                    
+                        </ul>
+                        <button class="btn btn-danger" id="delItem" onclick="del(this)"><i class="fa-solid fa-xmark-large"></i></button>
+                    </div>  -->
+                    <!-- <ul>
+                        <li>name : dd</li>
+                        <li>price : 415</li>
+                    </ul>
+                    <ul>
+                        <li>name : dd</li>
+                        <li>price : 415</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="flexitem">
+                <div class="card cardStyle" data-id="1">
+                    <img class="card-img-top" src="img/Pulp-Fiction1.png" style="height: 200px;" alt="Card image cap">
+                    <div class="card-body">
+                        <input class="unique-id" type="hidden" value="a1">
+                        <h5 class="card-title h-margin-card">pulp fiction</h5>
+                        <div class="row">
+                            <p class="card-text col-md-5">Genre:</p>
+                            <div class="col-md-6" id="pulp">action</div>
+                        </div>
+                        <div class="row">
+                            <p class="card-text col-md-5">price</p>
+                            <div class="col-md-6 price">1.5$</div>
+                        </div>
+                        <a href="#" class="btn btn-danger button-card">buy item</a>
+                    </div>
+                </div>
+                <div class="card cardStyle" data-id="2">
+                    <img class="card-img-top" src="img/1kLYRzVj6byWvFa3SLrAOcfgnfp.jpg" style="height: 200px;"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <input class="unique-id" type="hidden" value="a2">
+                        <h5 class="card-title h-margin-card">Titanic</h5>
+                        <div class="row">
+                            <p class="card-text col-md-5">Genre:</p>
+                            <div class="col-md-6">Romantic</div>
+                        </div>
+                        <div class="row">
+                            <p class="card-text col-md-5">price</p>
+                            <div class="col-md-6 price">1.5$</div>
+                        </div>
+                        <a href="#" class="btn btn-danger button-card">buy item</a>
+                    </div>
+                </div>
+                <div class="card cardStyle" data-id="3">
+                    
+                    
+                    <img class="card-img-top" src="img/maxresdefault.jpg" style="height: 200px;" alt="Card image cap">
+                    <div class="card-body">
+                        <input class="unique-id" type="hidden" value="a3">
+                        <h5 class="card-title h-margin-card">interstellar</h5>
+                        <div class="row">
+                            <p class="card-text col-md-5">Genre:</p>
+                            <div class="col-md-6">action</div>
+                        </div>
+                        <div class="row">
+                            <p class="card-text col-md-5">price</p>
+                            <div class="col-md-6 price">3.5$</div>
+                        </div>
+                        <a href="#" class="btn btn-danger button-card">buy item</a>
+                    </div>
+                </div>
+                <div class="card cardStyle" data-id="4">
+                    
+                    
+                    <img class="card-img-top" src="img/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_.jpg" style="height: 200px;" alt="Card image cap">
+                    <div class="card-body" data-id="1">
+                        <input class="unique-id" type="hidden" value="a4">
+                        <h5 class="card-title h-margin-card">the hatefull 8</h5>
+                        <div class="row">
+                            <p class="card-text col-md-5">Genre:</p>
+                            <div class="col-md-6">action</div>
+                        </div>
+                        <div class="row">
+                            <p class="card-text col-md-5">price</p>
+                            <div class="col-md-6 price">3.5$</div>
+                        </div>
+                        <a href="#" class="btn btn-danger button-card">buy item</a>
+                    </div>
+                </div>
+                <div class="card cardStyle" data-id="5">   
+                    <img class="card-img-top" src="img/p7825626_p_v8_af.jpg" style="height: 200px;" alt="Card image cap">
+                    <div class="card-body">
+                        <input class="unique-id" type="hidden" value="a5">
+                        <h5 class="card-title h-margin-card">inseption</h5>
+                        <div class="row">
+                            <p class="card-text col-md-5">Genre:</p>
+                            <div class="col-md-6">action</div>
+                        </div>
+                        <div class="row">
+                            <p class="card-text col-md-5">price</p>
+                            <div class="col-md-6 price">3.5$</div>
+                        </div>
+                        <a href="#" class="btn btn-danger button-card">buy item</a>
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <script src="index3.js"></script>
+
+        <!-- // <button class="btn btn-danger" id="delItem" onclick="del(this)"><i class="fa-solid fa-xmark-large"></i></button> -->
+</body>
+
+</html>
